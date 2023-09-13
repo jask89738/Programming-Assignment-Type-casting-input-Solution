@@ -1,0 +1,74 @@
+Programming Assignment: Type casting input
+Introduction
+In this lab you will be presented with three exercises to demonstrate how explicit type casting can be used to solve data being inputted from an end user. Each exercise will ask you to solve a particular problem relating to types.
+
+Goal
+To understand how and where to use implicit casting.
+
+Objectives
+Exercise 1: Use explicit casting to apply the correct cast type
+Exercise 2: Fix the script so it correctly outputs the bill total
+
+Learner Instructions
+Exercise 1
+
+Step 1: Open the script exercise1.py present inside the project folder
+Step 2: To run the script open terminal and execute the python3 exercise1.py command.
+Open the terminal to run the script.
+Step 3: Fix the script so the variables have the correct type.
+Exercise 2
+
+Step 1: Open the script exercise2.py present inside the project folder
+Step 2: To run the script open terminal and execute the command below.
+python3 exercise2.py
+Step 3: Fix the script so it outputs the correct bill total based on the data being entered.
+ 
+
+Programming Assignment: Type casting input Solution
+Copy and paste this code..
+
+exercise1.py
+
+# Using explicit type conversion, change the following 
+# inputs so the types match with the following below
+#  
+# name = type string
+# age = type int
+# height = type float
+# loyalty = type boolean
+# Modify the line below
+name = input('What is your name? ')
+print(f"Type of name variable is: {type(name)}. It should be <class 'str'>")
+# Modify the line below
+age = int(input('What is your age? '))
+print(f"Type of age variable is: {type(age)}. It should be <class 'int'>")
+# Modify the line below
+height = float(input('What is your height in meters? '))
+print(f"Type of height variable is: {type(height)}. It should be <class 'float'>")
+# Modify the line below
+loyalty = bool(input('Are you part of our loyalty program? '))
+print(f"Type of loyalty variable is: {type(loyalty)}. It should be <class 'bool'>")
+ 
+
+ 
+
+exercise2.py
+
+# The below script will ask for 3 inputs. Each input will be based
+# on the price of the items - the price is determined by you. The output
+# should print the total of the 3 inputs rounded to 2 decimal places e.g
+#
+#   1 coffee @ $ 2.00
+#   1 sandwich @ $ 4.99
+#   1 cake @ $ 2.75
+#
+#   Your total bill is $ 9.74
+# Modify the line below
+coffee = float(input('1 coffee @: $ '))
+# Modify the line below
+sandwich = float(input('1 sandwich @: $ '))
+# Modify the line below
+cake = float(input('1 cake @: $ '))
+bill_total = coffee + sandwich + cake
+print('Your total bill is $', bill_total)
+ 
